@@ -192,6 +192,7 @@ body{
 .featured-text-btn{
     display: flex;
     gap: 20px;
+    
 }
 .featured-text-btn>.blue-btn{
     background: var(--first-color);
@@ -327,7 +328,6 @@ h3{
     background: var(--first-color-hover);
 }
 
-/* ----- ABOUT / SKILLS BOX ----- */
 .skills-box{
     margin: 10px;
 }
@@ -347,7 +347,6 @@ h3{
     border-radius: 5px;
 }
 
-/* ----- PROJECTS BOX ----- */
 .project-container{
     display: flex;
     width: 100%;
@@ -518,6 +517,14 @@ footer{
 }
 
 
+@media only screen and (max-width: 360px){
+    .blue-btn {
+        font-size: 10px;
+    }
+    .btn{
+        font-size: 10px;
+    }
+}
 @media only screen and (max-width: 1024px){
     .featured-text{
         padding: 0;
