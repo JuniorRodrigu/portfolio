@@ -273,6 +273,7 @@ body{
     justify-content: space-between;
     width: 100%;
     gap: 50px;
+    font-size: 95%;
 }
 .col{
     display: flex;
@@ -320,12 +321,10 @@ h3{
     position: absolute;
     right: 20px;
     bottom: 20px;
-    background: var(--first-color);
-    color: var(--color-white);
     border-radius: 30px;
 }
 .about-btn button:hover{
-    background: var(--first-color-hover);
+    background-color: rgb(12, 209, 71);
 }
 
 .skills-box{
@@ -347,13 +346,17 @@ h3{
     border-radius: 5px;
 }
 
-.project-container{
+.project-container {
     display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
     width: 100%;
-    justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
 }
+
+
 .project-box{
     position: relative;
     display: flex;
@@ -385,6 +388,7 @@ h3{
     height: 100%;
     transition: .4s;
     z-index: 1;
+  
 }
 .project-box:hover.project-box::after,
 .contact-info:hover.contact-info::after{
@@ -522,6 +526,16 @@ footer{
         font-size: 65%;
     }
     .btn{
+        font-size: 65%;
+    }
+}
+@media only screen and (max-width: 473px){
+    .row{
+        font-size: 85%;
+    }
+}
+@media only screen and (max-width: 390px){
+    .row{
         font-size: 65%;
     }
 }
@@ -676,4 +690,76 @@ footer{
   .Btn:hover .svgIcon {
     opacity: 0;
     transition-duration: .3s;
+  }
+  
+
+
+
+
+  .button1 {
+    --main-focus: #2d8cf0;
+    --font-color: #323232;
+    --bg-color-sub: #dedede;
+    --bg-color: #eee;
+    --main-color: #323232;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+
+  }
+  .button__text1{
+    font-size: 93%;
+  }
+  .button1, .button__icon1, .button__text1 {
+    transition: all 0.3s;
+  }
+  
+  .button1 .button__text1 {
+    transform: translateX(22px);
+    color: var(--font-color);
+    font-weight: 600;
+
+  }
+  
+  .button1 .button__icon1 {
+ 
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--bg-color-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button1 .svg {
+    width: 20px;
+    fill: var(--main-color);
+  }
+  
+  .button1:hover {
+    background: var(--bg-color);
+  }
+  
+  .button1:hover .button__text1 {
+    color: transparent;
+  }
+  
+  .button1:hover .button__icon1 {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button1:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
   }
