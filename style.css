@@ -222,8 +222,8 @@ body{
     display: flex;
     justify-content: right;
     align-content: center;
-    min-height: 80vh;
-    width: 50%;
+    min-height: 90vh;
+    width: 90%;
 }
 .image{
     margin: auto 0;
@@ -574,7 +574,7 @@ footer{
     .featured-image{
         order: 1;
         justify-content: center;
-        min-height: 150px;
+        min-height: 250px;
         width: 100%;
         margin-top: 65px;
         margin-bottom: 10px;
