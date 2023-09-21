@@ -106,5 +106,24 @@ function scrollActive() {
     }
   })
 }
+function replaceContent() {
+  var projectContainer = document.querySelector(".project-container");
+  var projectBox = projectContainer.querySelector(".project-box");
+
+  // Crie um novo elemento com a classe "loader"
+  var loaderElement = document.createElement("div");
+  loaderElement.classList.add("loader");
+
+  // Substitua o conteúdo do "project-box" pelo "loader"
+  projectBox.innerHTML = '';
+  projectBox.appendChild(loaderElement);
+
+  // Redirecione o usuário para a página "peg.htm" após um certo período de tempo (por exemplo, 2 segundos)
+  setTimeout(function () {
+    window.location.href = "peg.html";
+  }, 2000); // Tempo em milissegundos (2 segundos neste caso)
+}
+
+
 
 window.addEventListener('scroll', scrollActive)
