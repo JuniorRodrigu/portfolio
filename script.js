@@ -121,7 +121,7 @@ function replaceContent() {
   // Redirecione o usuário para a página "peg.htm" após um certo período de tempo (por exemplo, 2 segundos)
   setTimeout(function () {
     window.location.href = "peg.html";
-  }, 2000); // Tempo em milissegundos (2 segundos neste caso)
+  }, 1000); // Tempo em milissegundos (2 segundos neste caso)
 }
 
 
