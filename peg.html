@@ -1,37 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylepeg.css">
-    <title>projetos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylepeg.css">
+  <title>projetos</title>
 </head>
+
 <body>
-  <div class="card">
-    <div class="card__wrapper">
-        <div class="card__back"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 24" height="24" width="14"><path stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke="#000" d="M12 2L2 12L12 22"></path></svg></div>
-        <div class="card__menu"><svg xmlns="http://www.w3.org/2000/svg" width="29" viewBox="0 0 29 14" height="14" fill="none"><path fill="#000" d="m16.5714 9.16667h10.3572c.5493 0 1.0762.22827 1.4647.6346s.6067.95743.6067 1.53203c0 .5747-.2182 1.1258-.6067 1.5321s-.9154.6346-1.4647.6346h-10.3572c-.5493 0-1.0762-.2283-1.4647-.6346s-.6067-.9574-.6067-1.5321c0-.5746.2182-1.1257.6067-1.53203s.9154-.6346 1.4647-.6346zm-14.49997-8.66667h24.85717c.5493 0 1.0762.228273 1.4647.6346.3885.40633.6067.95743.6067 1.53207 0 .57463-.2182 1.12573-.6067 1.53206s-.9154.6346-1.4647.6346h-24.85717c-.54938 0-1.076254-.22827-1.464722-.6346s-.606708-.95743-.606708-1.53206c0-.57464.21824-1.12574.606708-1.53207.388468-.406327.915342-.6346 1.464722-.6346z"></path></svg></div>
-    </div>
-    <div class="card__images">
-    <img class="center" src="qrcode.jpeg" alt="QR Code Image" style="width: 50%;  object-fit: cover;">
-    <img class="center" src="P2RQCODE.jpeg" alt="QR Code Image" style="width: 50%;  object-fit: cover;">
-  </div>
-    <div class="card__title">Gerardor de QRcode</div>
-    
-    <div class="card__subtitle">Este projeto é uma demonstração de como criar e baixar QR Codes usando React (com TypeScript). Ele oferece uma interface de usuário simples para inserir texto, gerar QR Codes a partir desse texto e fazer o download do QR Code gerado como uma imagem PNG.</div>
-    <div class="card__wrapper">
-       
+  <div class="card-container">
+    <div class="card">
+      <div class="card__wrapper">
+        <a href="index.html">
+          <div class="card__back"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 24" height="24"
+              width="14">
+              <path stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke="#000" d="M12 2L2 12L12 22">
+              </path>
+            </svg></div>
+        </a>
+        <div class="card__menu">
+          <img src="components/info.png" alt="" height="30px">
+        </div>
+      </div>
+      <div class="card__images">
+
+        <img class="center" src="/components/pagliste.jpeg" alt="QR Code Image" style="width: 50%;  object-fit: cover;">
+        <img class="center" src="components/paglidt.jpeg" alt="QR Code Image" style="width: 50%;  object-fit: cover;">
+      </div>
+      <div class="card__title">Listgift</div>
+
+      <div class="card__subtitle">Este projeto é um site de contribuição onde as pessoas podem contribuir com valores, O site usa a API do Mercado Pago para gerar QR Codes e permite pagamentos via Pix. Os detalhes das contribuições são armazenados em um banco de dados Firebase, incluindo o valor doado, o nome do doador, o valor total necessário, o valor já doado e o valor restante para atingir a  </div>
+      <div class="card__wrapper">
+
         <div class="card__counter">
+          <a href="https://listgif.vercel.app/">
           <button>
             <span>Continue</span>
             <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
-                <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+              <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+              <path
+                d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                fill="black"></path>
             </svg>
-        </button>
+          </button>
+        </a>
         </div>
-    </div>
-</div>
+      </div>
+    </div><div class="card-container">
+      <div class="card">
+        <div class="card__wrapper">
+          <a href="index.html">
+            <div class="card__back"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 24" height="24"
+                width="14">
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke="#000" d="M12 2L2 12L12 22">
+                </path>
+              </svg></div>
+          </a>
+          <div class="card__menu"><svg xmlns="http://www.w3.org/2000/svg" width="29" viewBox="0 0 29 14" height="14"
+              fill="none">
+              <path fill="#000"
+                d="m16.5714 9.16667h10.3572c.5493 0 1.0762.22827 1.4647.6346s.6067.95743.6067 1.53203c0 .5747-.2182 1.1258-.6067 1.5321s-.9154.6346-1.4647.6346h-10.3572c-.5493 0-1.0762-.2283-1.4647-.6346s-.6067-.9574-.6067-1.5321c0-.5746.2182-1.1257.6067-1.53203s.9154-.6346 1.4647-.6346zm-14.49997-8.66667h24.85717c.5493 0 1.0762.228273 1.4647.6346.3885.40633.6067.95743.6067 1.53207 0 .57463-.2182 1.12573-.6067 1.53206s-.9154.6346-1.4647.6346h-24.85717c-.54938 0-1.076254-.22827-1.464722-.6346s-.606708-.95743-.606708-1.53206c0-.57464.21824-1.12574.606708-1.53207.388468-.406327.915342-.6346 1.464722-.6346z">
+              </path>
+            </svg></div>
+        </div>
+        <div class="card__images">
   
+          <img class="center" src="/components/cep1.jpeg" alt="QR Code Image" style="width: 50%;  object-fit: cover;">
+          <img class="center" src="components/cep2.jpeg" alt="QR Code Image" style="width: 50%;  object-fit: cover;">
+        </div>
+        <div class="card__title">busca-CEP</div>
+  
+        <div class="card__subtitle"> Este projeto é um site de consulta de endereço por CEP que utiliza a API do ViaCEP para buscar informações detalhadas com base no CEP inserido pelo usuário. Além disso, o site possui um atraente modo escuro que proporciona uma experiência visual agradável. </div>
+        <div class="card__wrapper">
+  
+          <div class="card__counter">
+            <a href="https://busca-cep-pi.vercel.app/">
+            <button>
+              <span>Continue</span>
+              <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                <path
+                  d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                  fill="black"></path>
+              </svg>
+            </button>
+          </a>
+          </div>
+        </div>
+      </div>
+    <div class="card">
+      <div class="card__wrapper">
+        <a href="index.html">
+
+          <div class="card__back"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 24" height="24"
+              width="14">
+              <path stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke="#000" d="M12 2L2 12L12 22">
+              </path>
+            </svg></div>
+        </a>
+        <div class="card__menu"><svg xmlns="http://www.w3.org/2000/svg" width="29" viewBox="0 0 29 14" height="14"
+            fill="none">
+            <path fill="#000"
+              d="m16.5714 9.16667h10.3572c.5493 0 1.0762.22827 1.4647.6346s.6067.95743.6067 1.53203c0 .5747-.2182 1.1258-.6067 1.5321s-.9154.6346-1.4647.6346h-10.3572c-.5493 0-1.0762-.2283-1.4647-.6346s-.6067-.9574-.6067-1.5321c0-.5746.2182-1.1257.6067-1.53203s.9154-.6346 1.4647-.6346zm-14.49997-8.66667h24.85717c.5493 0 1.0762.228273 1.4647.6346.3885.40633.6067.95743.6067 1.53207 0 .57463-.2182 1.12573-.6067 1.53206s-.9154.6346-1.4647.6346h-24.85717c-.54938 0-1.076254-.22827-1.464722-.6346s-.606708-.95743-.606708-1.53206c0-.57464.21824-1.12574.606708-1.53207.388468-.406327.915342-.6346 1.464722-.6346z">
+            </path>
+          </svg></div>
+      </div>
+      <div class="card__images">
+        <img class="center" src="/components/qrcode.jpeg" alt="QR Code Image" style="width: 50%;  object-fit: cover;">
+        <img class="center" src="/components/P2RQCODE.jpeg" alt="QR Code Image" style="width: 50%;  object-fit: cover;">
+      </div>
+      <div class="card__title">Gerardor de QRcode</div>
+
+      <div class="card__subtitle">Este projeto é uma demonstração de como criar e baixar QR Codes usando React (com
+        TypeScript). Ele oferece uma interface de usuário simples para inserir texto, gerar QR Codes a partir desse
+        texto e fazer o download do QR Code gerado como uma imagem PNG.</div>
+      <div class="card__wrapper">
+
+        <div class="card__counter">
+          <a href="https://geradorqr-nu.vercel.app/">
+          <button>
+            <span>Continue</span>
+            <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+              <path
+                d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                fill="black"></path>
+            </svg>
+          </button>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <!-- Conteúdo do modal -->
+  <div class="modal-content">
+    <span class="close" id="closeModalBtn">&times;</span>
+    <h2>Título do Modal</h2>
+    <p>Este é o conteúdo do modal.</p>
+  </div>
+</div>
+
 </body>
+<script>
+  // Encontre o modal e o botão de fechar
+  const modal = document.getElementById("myModal");
+  const closeModalBtn = document.getElementById("closeModalBtn");
+
+  // Adicione um evento de clique ao botão de menu para abrir o modal
+  const menu = document.querySelector(".card__menu");
+  menu.addEventListener("click", function() {
+    modal.style.display = "block";
+  });
+
+  // Adicione um evento de clique ao botão de fechar para fechar o modal
+  closeModalBtn.addEventListener("click", function() {
+    modal.style.display = "none";
+  });
+
+  // Feche o modal quando o usuário clicar fora dele
+  window.addEventListener("click", function(event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
+
 </html>
